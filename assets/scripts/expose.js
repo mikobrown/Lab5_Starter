@@ -14,25 +14,25 @@ function init() {
       shootConfetti = false;
     }
     let image = document.querySelector('[alt="No image selected"]');
-    image.src = "/assets/images/" + event.target.value + ".svg";
+    image.src = "/Lab5_Starter/assets/images/" + event.target.value + ".svg";
     let audio = document.getElementsByClassName('hidden')[0];
-    audio.src = "/assets/audio/" + event.target.value + ".mp3";
+    audio.src = "/Lab5_Starter/assets/audio/" + event.target.value + ".mp3";
   });
 
   let volumeSlider = document.getElementById('volume-controls');
   volumeSlider.addEventListener('change', (event) => {
     let image = document.querySelector('[alt="Volume level 2"]');
     if (event.target.value == 0){
-      image.src = "/assets/icons/volume-level-0.svg";
+      image.src = "/Lab5_Starter/assets/icons/volume-level-0.svg";
     }
     else if (event.target.value < 33){
-      image.src = "/assets/icons/volume-level-1.svg";
+      image.src = "/Lab5_Starter/assets/icons/volume-level-1.svg";
     }
     else if (event.target.value < 67){
-      image.src = "/assets/icons/volume-level-2.svg";
+      image.src = "/Lab5_Starter/assets/icons/volume-level-2.svg";
     }
     else {
-      image.src = "/assets/icons/volume-level-3.svg";
+      image.src = "/Lab5_Starter/assets/icons/volume-level-3.svg";
     }
     let audio = document.getElementsByClassName('hidden')[0];
     audio.volume = event.target.value / 100;
