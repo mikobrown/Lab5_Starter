@@ -14,7 +14,6 @@ function init() {
       shootConfetti = false;
     }
     let image = document.querySelector('[alt="No image selected"]');
-    console.log("/Lab5_Starter/assets/images/" + event.target.value + ".svg");
     image.src = "/Lab5_Starter/assets/images/" + event.target.value + ".svg";
     let audio = document.getElementsByClassName('hidden')[0];
     audio.src = "/Lab5_Starter/assets/audio/" + event.target.value + ".mp3";
