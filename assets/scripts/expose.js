@@ -15,6 +15,7 @@ function init() {
     }
     let image = document.querySelector('[alt="No image selected"]');
     image.src = "/Lab5_Starter/assets/images/" + event.target.value + ".svg";
+    console.log(image.src)
     let audio = document.getElementsByClassName('hidden')[0];
     audio.src = "/Lab5_Starter/assets/audio/" + event.target.value + ".mp3";
   });
